@@ -97,7 +97,7 @@ def run_simulation():
 
     # Load the basketball image
     basketball_img = plt.imread("basketballll.png")
-    imagebox = OffsetImage(basketball_img, zoom=0.05)  # Adjust the zoom level as needed
+    imagebox = OffsetImage(basketball_img, zoom=0.025)  # Adjust the zoom level as needed
 
     # Plot and label key points
     time_text = f"Flight Time: {round(positions[-1, 0], 2)}s"
@@ -117,7 +117,7 @@ def run_simulation():
 
     # Load the hoop image
     hoop_img = plt.imread("hoopp.png")
-    hoop_imagebox = OffsetImage(hoop_img, zoom=0.2)  # Adjust the zoom level as needed
+    hoop_imagebox = OffsetImage(hoop_img, zoom=0.05)  # Adjust the zoom level as needed
 
     # Create AnnotationBbox to display the hoop image
     hoop_ab = AnnotationBbox(hoop_imagebox, (hoop_distance, hoop_height), frameon=False)
